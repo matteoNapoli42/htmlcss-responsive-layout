@@ -1,0 +1,536 @@
+/* GENERAL ZONE*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+/*  END GENERAL ZONE*/
+
+
+/* UTILITY ZONE*/
+
+:root{
+    --rsp-primary: #9792E4;
+    --rsp-secondary: #FFFFFF;
+    --rsp-heanvenly: #0084FD;
+    --rsp-light-heanvenly: #B5DDFF;
+    --rsp-special: #FDC15F;
+    --rsp-footer: #333333;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.f-bw{
+    justify-content: space-between;
+}
+
+.f-ar{
+    justify-content: space-around;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.margin-txt>*{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.margin-txt-small>*{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-cont{
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-violet{
+    background-color: var(--rsp-primary);
+}
+/* END UTILITY ZONE*/
+
+/* HEADER*/
+header{
+    background-color: var(--rsp-heanvenly);
+    height: 5vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+#logo{
+    height: 3.5vh;
+}
+
+nav{
+    align-items: center;
+    height: 100%;
+}
+
+#nav-links{
+    display: none;
+}
+
+#nav-links *{
+    margin-left: 10px;
+}
+
+#nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav-links a:hover{
+    text-decoration: underline;
+}
+
+nav i{
+    font-size: 3vh;
+    color: white;
+}
+
+
+/*********************************************************************************
+                                    MAIN ZONE
+*********************************************************************************/
+
+
+/* FIRST SECTION*/
+
+#hero{
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    flex-wrap: wrap;
+}
+
+.hero-item{
+    background-color: #b5ddff;
+    border-radius: 20px;
+    margin: 2vh 0;
+}
+
+.big-container-style{
+    padding: 20px 20px 0px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.little-container-style{
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-item p{
+    color: #5a6e7f;
+}
+
+.little-container-style i{
+    text-align: center;
+    font-size: 60px;
+    color: #0084fd;
+}
+.big-container-style img{
+    width: 80%;
+    display: block;
+}
+
+.big-container-style button{
+    background-color: #0084fd;
+    color: white;
+}
+
+#hero h3{
+    text-align: center;
+    color: #0084FD;
+}
+
+.fa-apple{
+    margin: 0;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+/* END FIRST SECTION*/
+
+/* SECOND SECTION*/
+
+#double-img-sec{
+    background-color:#9792E4;
+    width: 100%;
+    padding: 6vh 0;
+}
+
+#double-img-sec img{
+    width: 100%;
+}
+
+#big-img-1{
+    color: white;
+}
+
+#big-img-2 span{
+    padding: 13px;
+    position: relative;
+    left: 40%;
+}
+/* END SECOND SECTION*/
+
+/* TESTIMONIALS SECTION*/
+#testimonials{
+    text-align: center;
+    margin: auto;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    display: block;
+}
+
+#testimonials h4{
+    text-align: start;
+}
+
+.card{
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[id|="testimonial"]{
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    background-position: center;
+}
+
+
+.t-info{
+    margin-top: 15px;
+}
+
+.t-info>span{
+    position: relative;
+}
+
+.open-quote:before{
+    content: open-quote;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    left: -26px;
+}
+
+.close-quote:after{
+    content: close-quote;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -37px;
+    right: 26px;
+}
+
+#testimonial-1{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+#testimonial-2{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+#testimonial-3{
+    background-image: url(../img/testimonial3.jpg);
+}
+/* END TESTIMONIALS SECTION*/
+
+/* BENEFITS SECTION*/
+
+#benefits{
+    padding: 4vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#benefits>h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px auto;
+    color: white;
+    width: 100%;
+}
+
+.benefits-item h1,
+.benefits-item h2{
+    color: var(--rsp-primary);
+}
+
+.benefits-item p{
+    color: #5a6e7f
+}
+
+.benefits-item h1:first-child{
+    font-size:50px
+}
+
+.benefits-item button{
+    color: white;
+}
+/* END BENEFITS SECTION*/
+
+/* ABOUT US SECTION*/
+
+#about-us-1{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+}
+
+#about-us-1 h1{
+    font-size: 300%;
+    color: var(--rsp-primary);
+}
+
+#about-us-1 p{
+    font-size:larger;
+}
+#about-us-2 h1{
+    font-size: 150%;
+    color: var(--rsp-primary);
+}
+
+#about-us-2 button{
+    color: white;
+}
+
+#about-us-img{
+    height: 180px;
+    width: 180px;
+    background-image: url(../img/about.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+#about-us-img::after{
+    content: open-quote;
+    font-weight: bold;
+    font-size: 100px;
+    color: var(--rsp-primary);
+    position: relative;
+    left: 130px;
+    bottom: 10px;
+}
+/* END ABOUT US SECTION*/
+
+/*GET STARTED SECTION*/
+#get-started{
+    color: white;
+    padding: 4vh 0;
+    text-align: center;
+}
+
+#get-started h3{
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+#get-started h1{
+    color: var(--rsp-special);
+    font-size: 50px;
+}
+
+#get-started button{
+    color: var(--rsp-primary);
+    font-size: 1.3em;
+    padding: 20px 45px;
+    border-radius: 30px;
+}
+
+.fa-brands, .fab{
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.dot{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#started a{
+    color: white;
+}
+/* END GET STARTED SECTION*/
+
+
+/*********************************************************************************
+                              END MAIN ZONE
+*********************************************************************************/
+
+/*FOOTER ZONE*/
+footer{
+    background-color: var(--rsp-footer);
+    padding: 5vh 0;
+}
+
+#foot{
+    color: white;
+    text-align: center;
+}
+
+#foot a{
+    color: var(--rsp-primary);
+}
+
+#foot *{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* RESOLUTIONS ZONE*/
+
+@media screen and (min-width: 427px) {
+    #hero{
+        justify-content: space-between;
+        font-size: 2vw;
+    }
+
+    .big-container-style{
+        width: 66%;
+        justify-content: flex-start;
+    }
+
+    #phone{
+        width: 80%;
+    }
+
+    #phone img{
+        margin: 0;
+    }
+
+    .little-container-style{
+        width: 30%;
+    }
+
+    #big-img-1 h1{
+        font-size: 6vw;
+    }
+
+    #big-img-2 span{
+        left: 45%;
+    }
+
+    .card{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .t-info{
+        width: 60%;
+    }
+
+    [id|="testimonial"]{
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .benefits-item{
+        width: 50%;
+    }
+
+    #about-us{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-us-1{
+        width: 50%;
+    }
+
+    #about-us-2{
+        width: 40%;
+    }
+}
+
+
+
+
+@media screen and (min-width : 1200px){
+
+    #nav-links{
+        display: block;
+    }
+
+    nav .fa-bars{
+        display: none;
+    }
+
+    #hero{
+        font-size: 1em;
+    }
+
+    #phone{
+        width :50%;
+    }
+
+    #phone img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #get-a-demo{
+        width: 50%;
+    }
+
+    #double-img-container{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    #big-img-1{
+        width: 40%;
+    }
+
+    #big-img-2{
+        width: 40%;
+    }
+
+    [id|="testimonial"]{
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .benefits-item{
+        width:  30%;
+    }
+}
+/* END RESOLUTIONS ZONE*/
